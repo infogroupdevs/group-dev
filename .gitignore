@@ -1,2 +1,4 @@
 wp-content/themes/twentytwentytwo
 wp-content/uploads
+/wp-content/themes/group-dev/node_modules/
+/wp-config.php

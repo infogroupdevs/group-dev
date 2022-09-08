@@ -1,9 +1,8 @@
-$primaryColor: #FF4C3B;
-$primaryColorLight: #FF5B4B;
-$secondaryColor: #222222;
+$primaryColor: #FF5722;
+$secondaryColor: #303841;
 $white: #FFFFFF;
 
-$grayColor: #DDDDDD;
+$grayColor: #EEEEEE;
 $redColor: #F64040;
 $colorOff: #CFD3E4;
 
@@ -57,6 +56,8 @@ $theme: (
 		12: 12px,
 		13: 13px,
 		14: 14px,
+		15: 15px,
+		16: 16px,
 	),
 	fontWeight: (
 		bold: $bold,
@@ -207,11 +208,11 @@ $theme: (
 		)
 	),
 	body: (
-		font-size: 14px,
+		font-size: 16px,
 		font-weight: 300,
-		line-height: 18px,
-		font-family: "'Open Sans', sans-serif",
-		color: $primaryColor,
+		line-height: 16px,
+		font-family: "'Urbanist', sans-serif",
+		color: $secondaryColor,
 		margin: 0,
 		padding: 0,
 	),
@@ -322,10 +323,6 @@ $components: (
 			border: solid 1px,
 			border-radius: 0px,
 		),
-		tertiary: (
-			background: $grayColor,
-			color: $secondaryColor,
-		)
 	)
 )
 
