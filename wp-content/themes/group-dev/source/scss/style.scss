@@ -1,0 +1,54 @@
+/*!
+Theme Name: Theme Groupdev
+Theme URI:
+Author: Groupdev
+Author URI:
+Description:
+Version: 1.0.0
+Text Domain: Groupdev
+Tags:
+*/
+
+//- Vars
+@import "config";
+
+//- Mixins
+@import "mixins/mixins-master";
+@import "mixins/custom";
+@import "mixins/breakpoints";
+@import "mixins/hover";
+@import "mixins/background-variant";
+@import "mixins/text-emphasis";
+@import "mixins/text-truncate";
+@import "mixins/text-hide";
+@import "mixins/grid-framework-flex";
+@import "mixins/grid";
+
+//- Utilities
+@import "utilities/normalize";
+@import "utilities/grid-flex";
+
+@import "utilities/align";
+@import "utilities/borders";
+@import "utilities/clear";
+@import "utilities/display";
+@import "utilities/flex";
+@import "utilities/float";
+@import "utilities/images";
+@import "utilities/position";
+@import "utilities/sizing";
+@import "utilities/spacing";
+@import "utilities/texts";
+@import "utilities/background";
+@import "utilities/animation";
+@import "utilities/text-limit-lines";
+@import "utilities/icons";
+@import "utilities/other-icons";
+@import "utilities/content";
+@import "utilities/overflow";
+
+//- Components
+@import "components/buttons";
+@import "components/checkbox";
+@import "components/forms";
+@import "components/radio";

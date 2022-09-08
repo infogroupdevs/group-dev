@@ -1,0 +1,82 @@
+/*------------------------------------*\
+$SHARE
+\*------------------------------------*/
+.share {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+    a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        &:first-of-type {
+            background: #3a5998;
+        }
+        &:nth-of-type(2) {
+            background: #29a8e2;
+        }
+        &:nth-of-type(3) {
+            background: #0077b4;
+        }
+        &:nth-of-type(4) {
+            background: #de4139;
+        }
+        &:last-of-type {
+            background: #ff6a08;
+        }
+        .no-touch & {
+            &:hover {
+                background: $lightColor;
+                &:first-of-type svg {
+                    fill: #3a5998;
+                }
+                &:nth-of-type(2) svg {
+                    fill: #29a8e2;
+                }
+                &:nth-of-type(3) svg {
+                    fill: #0077b4;
+                }
+                &:nth-of-type(4) svg {
+                    fill: #de4139;
+                }
+                &:last-of-type svg {
+                    fill: #ff6a08;
+                }
+            }
+        }
+    }
+    svg {
+        max-width: 16px;
+        max-height: 16px;
+        fill: white;
+    }
+}
+.content--flipbook {
+    .share {
+        overflow: hidden;
+        margin-bottom: 0;
+        color: white;
+        border-top: 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: auto;
+    }
+    .icon__share {
+        display: flex;
+    }
+}
+.icon__share {
+    width: 32px;
+    height: 32px;
+    background: #2e6fc3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    display: none;
+}

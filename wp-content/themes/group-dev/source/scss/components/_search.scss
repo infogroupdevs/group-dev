@@ -1,0 +1,103 @@
+#ajaxsearchlite1 .probox, div.asl_w .probox {
+  height: 36px !important;
+}
+
+div.asl_m .probox .proinput {
+  padding: 5px 5px !important;
+}
+
+div.asl_w .probox .promagnifier {
+  display: none;
+}
+
+.search .asl_m, .search .asl_m .probox {
+  background-color: transparent !important;
+}
+.search div.asl_m .probox .proclose svg {
+  background: transparent !important;
+  border: none !important;
+  margin-top: -6px !important;
+  box-shadow: none !important;
+}
+
+div.asl_r .results .item .asl_content h3 a{
+  color: $tertiaryColor !important;
+  font-weight: $bold !important;
+}
+div.asl_r.asl_w.vertical .results .item::after {
+  display: none !important;
+}
+
+div.asl_r p.showmore a {
+  border: none !important;
+  background: $lightColor;
+  color: $primaryColor !important;
+  border-radius: 21px;
+  text-decoration: underline;
+}
+
+div.asl_r.vertical {
+  padding: 7px !important;
+  width: 240px !important;
+  @media (min-width: $lg) {
+    padding: 19px !important;
+    width: 280px !important;
+  }
+}
+
+div.asl_r .results .item .asl_content h3 {
+  order: 2;
+}
+div.asl_r .results .item div.etc {
+  order: 1;
+}
+
+div.asl_r .results .item .asl_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.asl_r .results .item .asl_content h3 {
+  width: 146px;
+  margin-left: 90px !important;
+  @media (min-width: $lg) {
+    margin-left: 111px!important;
+  }
+  position: absolute;
+  margin-top: 22px!important;
+}
+
+div.asl_r .results .item .etc .asl_date {
+  height: 20px;
+  color: $primaryColor !important;
+}
+
+div.asl_r .results .item .asl_content {
+  padding: 8px 3px 9px 3px !important;
+}
+
+div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+  width: 80px !important;
+  height: 80px !important;
+  @media (min-width: $lg) {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+div.asl_r .results .item .etc .asl_date {
+  margin: 0 0 0 4px !important;
+}
+div.asl_r .results .item .etc .asl_date {
+  font-size: 10px !important;
+  @media (min-width: $lg) {
+    font-size: 12px !important;
+  }
+}
+
+div.asl_r .results .item .asl_content h3, div.asl_r .results .item .asl_content h3 a {
+  font-size: 12px !important;
+  @media (min-width: $lg) {
+    font-size: 14px !important;
+  }
+}

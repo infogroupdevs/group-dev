@@ -1,0 +1,9 @@
+$btn-colors: map-get($theme, 'colors');
+$colorPrimary: map-get($btn-colors, 'primary');
+
+.btn-secundary {
+	&:hover i {
+			color: $colorPrimary !important;
+		  background-color: #ffffff !important;
+	}
+}

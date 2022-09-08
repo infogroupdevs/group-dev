@@ -1,0 +1,35 @@
+.menu-side {
+	width: 0;
+	overflow: hidden;
+	transition: all .5s ease;
+	opacity: 0;
+	animation: fadein .1s linear;
+	-webkit-animation: fadein .1s linear;
+	-moz-animation: fadein .1s linear;
+	&.active {
+		width: 320px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0
+	}
+
+	1% {
+		opacity: .1
+	}
+
+	25% {
+		opacity: .3
+	}
+
+	50% {
+		opacity: .5
+	}
+
+	100% {
+		opacity: 1
+	}
+}

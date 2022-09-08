@@ -1,0 +1,64 @@
+.tabs {
+	display: block;
+	width: 100%;
+	font-family: Arial;
+	font-size: 13px;
+
+	&__link {
+		display: block;
+		font-size: 0;
+		background-color: #000;
+	}
+
+	&-vtl {
+		.tabs__link {
+			float: left;
+			width: 15%;
+		}
+
+		.tab__link {
+			display: block;
+		}
+
+		.tab__content {
+			float: left;
+			width: 85%;
+		}
+	}
+}
+
+.tab {
+	&__link {
+		display: inline-block;
+		padding: 10px;
+		font-size: 13px;
+		color: #FFF;
+		background-color: black;
+		cursor: pointer;
+
+		&.tab--active {
+			background-color: red;
+		}
+	}
+
+	&__content {
+		display: none;
+		padding: 20px;
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s;
+
+		&.tab--active {
+			display: block;
+		}
+	}
+}
+
+@-webkit-keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}

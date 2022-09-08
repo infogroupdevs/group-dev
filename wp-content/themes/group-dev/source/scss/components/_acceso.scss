@@ -1,0 +1,73 @@
+.acceso--box {
+  width: 100%;
+  margin: 30px auto;
+  max-width: 482px;
+  position: relative;
+
+  .btn--suscripcion {
+    height: 36px;
+    width: 100%;
+    max-width: 182px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 31px auto 0 auto;
+    display: block;
+    border-radius: 0;
+  }
+
+  .close {
+    position: absolute;
+    margin: 11px;
+    display: none;
+  }
+}
+
+.acceso__container {
+  padding: 25px 20px;
+
+  a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 31px;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+}
+
+.acceso__links {
+  text-align: center;
+  padding: 32px 0;
+
+  a {
+    font-weight: 700;
+    padding: 13px 2px;
+    display: block;
+    max-width: 222px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+.lightbox--acceso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(85, 85, 85, 0.5);
+  .close {
+    display: block;
+  }
+}
+
+.close--lightbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+

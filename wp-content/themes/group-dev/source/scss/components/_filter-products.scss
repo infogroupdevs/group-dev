@@ -1,0 +1,64 @@
+.bapf_sfilter .bapf_colaps_smb,
+.bapf_sfilter .bapf_desci {
+	color: $primaryColor;
+}
+
+.irs--big .irs-handle {
+	top: 25px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background: $primaryColor;
+	box-shadow: none;
+	border-radius: 30px;
+}
+
+.irs--big .irs-bar {
+	top: 33px;
+	height: 12px;
+	border: none;
+	background: $primaryColor;
+	box-shadow: none;
+}
+
+
+element.style {
+	visibility: visible;
+	left: 0%;
+}
+.irs--big .irs-from, .irs--big .irs-single, .irs--big .irs-to {
+	color: $gray4Color;
+	text-shadow: none;
+	padding: 1px 5px;
+	background: none;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.irs-from, .irs-single, .irs-to {
+	top: 60px;
+}
+
+.bapf_sfilter {
+	margin-bottom: 45px;
+
+}
+
+.irs--big .irs-handle {
+	cursor: pointer;
+}
+
+.irs--big .irs-handle:hover {
+	border-color:inherit;
+	background: $primaryColorLight;
+}
+
+.bapf_sfilter .bapf_hascolarr, .bapf_sfilter .bapf_hasdesc {
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.bapf_sfilter.bapf_button_berocket .bapf_button {
+	font-size: 13px;
+	padding: 1px 18px;
+}

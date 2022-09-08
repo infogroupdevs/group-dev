@@ -1,0 +1,62 @@
+//-
+//- Tables
+//-
+.table,
+.table-all {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	td,
+	th {
+		display: table-cell;
+		padding: 8px;
+		text-align: left;
+		vertical-align: top;
+
+		&:first-child,
+		&:first-child {
+			padding-left: 16px
+		}
+	}
+}
+
+.table {
+	&--hoverable {
+		tbody {
+			tr:hover {
+				background-color: #CCC;
+			}
+		}
+	}
+
+	&--striped {
+		tbody {
+			tr:nth-child(even) {
+				background-color: #F1F1F1;
+			}
+		}
+	}
+
+	&--bordered {
+		tr {
+			border-bottom: 1px solid #DDD;
+		}
+	}
+}
+
+.table-all {
+	border: 1px solid #CCC;
+
+	tr {
+		border-bottom: 1px solid #DDD;
+		&:nth-child(odd) {
+			background-color: #FFF;
+		}
+
+		&:nth-child(even) {
+			background-color: #F1F1F1;
+		}
+	}
+}

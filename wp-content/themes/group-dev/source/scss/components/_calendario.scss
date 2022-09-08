@@ -1,0 +1,130 @@
+/*------------------------------------*\
+$CALENDARIO
+\*------------------------------------*/
+select {
+    appearance: none;
+}
+.calendario {
+    width: 280px;
+}
+.calendario__select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.calendario__slect__item {
+    height: 32px;
+    background: $grayColor;
+    position: relative;
+    svg {
+        width: 12px;
+        height: 8px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        z-index: 1;
+    }
+    select {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 0 10px;
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        height: 32px;
+    }
+}
+.calendario__select--big {
+    width: calc(65% - 6px);
+}
+.calendario__select--small {
+    width: 35%;
+}
+.calendario--days {
+
+}
+.calendario--days__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    font-size: 12px;
+    border-bottom: 1px solid $grayColor;
+}
+.calendario--days--top {
+    margin-top: 10px;
+    p {
+        width: (100% / 7);
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+.calendario--days--bottom {
+    margin-bottom: 24px;
+    p, a {
+        width: (100% / 7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        height: 40px;
+        font-weight: 700;
+    }
+    a {
+        background: $primaryColor;
+        color: white;
+        .no-touch & {
+            &:hover {
+                background: $primaryColor;
+                color: white;
+            }
+        }
+    }
+}
+
+.accordeon__title, .accordeon__content dt, .ask__content dt {
+    font-weight: $bold;
+}
+
+.accordeon__title, .ask__title {
+    line-height: 21px;
+    line-height: 1.3125rem;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.eventos--accordeon.active .icon-line, .ask--box.active .icon-line {
+    opacity: 0;
+}
+
+.no-touch .accordeon__content dl a:hover, .no-touch .ask__content dl a:hover {
+    color: $primaryColor;
+}
+
+.accordeon__content, .ask__content {
+    display: none;
+    padding: 20px;
+}
