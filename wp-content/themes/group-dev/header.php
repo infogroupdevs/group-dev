@@ -26,5 +26,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header>
-		<h1>Header</h1>
+		<?php
+			require_once(PATH_INC . '/main-menu.php');
+		?>
 	</header>

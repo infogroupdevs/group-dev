@@ -1,11 +1,8 @@
 <?php
+require_once(get_template_directory() . '/inc/var_global.php');
 
-$pathInc = get_template_directory() . '/inc';
-require_once($pathInc . '/enqueue_style.php');
-require_once($pathInc . '/enqueue_script.php');
-
-
-
+require_once(PATH_INC . '/enqueue_style.php');
+require_once(PATH_INC . '/enqueue_script.php');
 
 /**
  * Group Dev functions and definitions
@@ -193,5 +190,26 @@ function remove_admin_bar()
 	}
 }
 
+function register_acf_block_types() {
+
+	if( function_exists('acf_register_block_type') ) {
+
+		// Register Block Hero.
+		acf_register_block_type(
+			[
+				'name'              => 'hero',
+				'title'             => __('Hero'),
+				'description'       => __('Block Hero.'),
+				'category'          => 'formatting',
+				'icon'              => 'images-alt2',
+				'keywords'          => [ 'block', 'custom', 'hero', 'quote'],
+				'render_template'   => '/inc/blocks/hero.php',
+				'mode'              => 'edit', // Force Edit Mode
+			]
+		);
+	}
+}
+
+add_action('acf/init', 'register_acf_block_types');
 
 
