@@ -1,4 +1,4 @@
-const main = function (JQ) {
+/*const main = function (JQ) {
 	let WIDTH_MOBILE = 320,
 		WIDTH_TABLET = 768,
 		WIDTH_DESKTOP = 1024,
@@ -23,4 +23,4 @@ const main = function (JQ) {
 		}
   fn.initialize()
   if (fn) return fn
-}(jQuery)
+}(jQuery)*/
