@@ -23,6 +23,7 @@ Tags:
 @import "mixins/text-hide";
 @import "mixins/grid-framework-flex";
 @import "mixins/grid";
+@import "mixins/flexbox-grid-mixins";
 
 //- Utilities
 @import "utilities/normalize";
@@ -46,9 +47,18 @@ Tags:
 @import "utilities/other-icons";
 @import "utilities/content";
 @import "utilities/overflow";
+@import "utilities/grid";
+@import "utilities/check_list_ul";
 
 //- Components
 @import "components/buttons";
 @import "components/checkbox";
 @import "components/forms";
 @import "components/radio";
+
+@import "template/header";
+
+.wrapper {
+  max-width: $xl;
+  margin: 0 auto;
+}

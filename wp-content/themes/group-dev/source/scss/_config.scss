@@ -9,6 +9,9 @@ $colorOff: #CFD3E4;
 $colorDanger: $redColor;
 $success: $primaryColor;
 
+$grayColor500: #EAE9E9;
+$grayColor600: #333;
+
 $light: 300;
 $bold: 700;
 $semiBold: 600;
@@ -24,7 +27,7 @@ $xs: 0;
 $sm: 375px;
 $md: 768px;
 $lg: 1062px;
-$xl: 1272px;
+$xl: 1140px;
 
 $theme: (
 	screens: (
@@ -49,6 +52,9 @@ $theme: (
 		gray: $grayColor,
 		success: $success,
 		desactive-link: #A7A7A7,
+		semi-transparent: #FFFFFFD1,
+		gray-500: $grayColor500,
+		gray-600: $grayColor600,
 	),
 	fontSizes: (
 		default: 14px,
@@ -58,6 +64,7 @@ $theme: (
 		14: 14px,
 		15: 15px,
 		16: 16px,
+		40: 40px,
 	),
 	fontWeight: (
 		bold: $bold,
@@ -77,11 +84,15 @@ $theme: (
 		auto: auto,
 		full: 100%,
 		screen: 100vh,
+		20: 20px,
+		30: 30px,
+		400: 400px,
 	),
 	height: (
 		auto: auto,
 		full: 100%,
 		screen: 100vh,
+		80: 80px,
 	),
 	maxWidth: (
 		none: none,
@@ -97,10 +108,22 @@ $theme: (
 	),
 	margin: (
 		auto: auto,
-		0:0,
+		0: 0,
+		5: 5px,
+		20: 20px,
+		25: 25px,
 	),
 	padding: (
 		0: 0,
+		5:5px,
+		20: 20px,
+		30: 30px,
+		50: 50px,
+		72: 72px,
+		80: 80px,
+		100: 100px,
+		120: 120px,
+		150: 150px,
 	),
 	zIndex: (
 		default: 99,
@@ -137,7 +160,8 @@ $theme: (
 		table-row: table-row,
 		table-cell: table-cell,
 		flex: flex,
-		inline-flex: inline-flex
+		inline-flex: inline-flex,
+		grid: grid
 	),
 	positions: (
 		static: static,
@@ -148,14 +172,19 @@ $theme: (
 	),
 	right: (
 		0: 0,
+		20: 20px,
+		full: 100%,
+		-full: -100%,
 	),
 	left: (
 		0: 0,
 	),
 	top: (
 		0: 0,
+		20: 20px
 	),
 	bottom: (
+		-80:-80px,
 		0: 0,
 	),
 	floats: (
@@ -191,13 +220,13 @@ $theme: (
 			line-height: 38px,
 		),
 		h2: (
-			font-size: 18px,
+			font-size: 40px,
 			font-weight: $bold,
-			line-height: 23px,
-			letter-spacing: 0.08em,
+			line-height: 40px,
+			color: $secondaryColor,
 		),
 		h3: (
-			font-size: 18px,
+			font-size: 24px,
 			font-weight: $bold,
 			line-height: 26px
 		),
@@ -205,14 +234,23 @@ $theme: (
 			font-size: 16px,
 			font-weight: $bold,
 			line-height: 24px
+		),
+		h6: (
+			background-color: #ddd,
+      display: inline-block,
+      font-size: 13px,
+      padding: 5px 10px,
+      margin-bottom: 10px,
+      font-weight: 600,
 		)
 	),
 	body: (
-		font-size: 16px,
-		font-weight: 300,
-		line-height: 16px,
+		font-size: 17px,
+		font-weight: 400,
+		line-height: 21px,
+		letter-spacing: .6px,
 		font-family: "'Urbanist', sans-serif",
-		color: $secondaryColor,
+		color: $grayColor600,
 		margin: 0,
 		padding: 0,
 	),
@@ -220,6 +258,7 @@ $theme: (
 		transitions: (
 			transition-br: border-bottom 0.2s linear,
 			transition-bgc: background-color 0.5s ease-in-out,
+			transition-cubic: all .7s cubic-bezier(.9,.03,0,.96) .4s,
 		),
 		slide: (
 			position: right,
@@ -305,10 +344,10 @@ $components: (
 		primary: (
 			background: $primaryColor,
 			color: $white,
-			border-color: $white,
-			font-size: 14px,
+			font-size: 16px,
 			font-weight: $semiBold,
 			display: inline-block,
+			padding: 20px 40px 20px 40px,
 		),
 		secondary: (
 			background: $white,

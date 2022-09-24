@@ -144,7 +144,6 @@ $label-disabled: map-get($label, 'color-disabled');
 			background: $primaryColor;
 		}
 		+ label:after {
-			@extend .icon-checkmark:before;
 			font-family:$icon_font_name;
 			color: #fff;
 			position: absolute;
@@ -156,7 +155,6 @@ $label-disabled: map-get($label, 'color-disabled');
 }
 
 input[type=radio]:checked:after {
-	@extend .icon-checkmark:before;
 	width: 12px;
 	height: 12px;
 	font-family:$icon_font_name;
@@ -378,7 +376,6 @@ input {
 $icon_font_name: "iconfont-ra";
 div.error {
   color: $label-color-error;
-  @extend .icon-close !optional;
   input[type="text"], input[type="email"], {
     border: 1px solid $label-color-error !important;
     color: $label-color-error !important;
@@ -407,8 +404,6 @@ div.valid {
   input[type="text"], input[type="email"] {
     border: solid 1px $success;
   }
-
-  @extend .icon-Check !optional;
 
   &:before {
     position: absolute;

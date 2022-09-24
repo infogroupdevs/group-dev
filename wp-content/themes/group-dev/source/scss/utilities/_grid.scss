@@ -1,42 +1,14 @@
-// Container widths
-//
-// Set the container width, and override it for fixed navbars in media queries.
+$default-grid-columns: 12;
+$default-grid-gutter: 2%;
 
-.container {
-  @include make-container();
-  @include make-container-max-widths();
+.grid {
+	@include grid($gutter: $default-grid-gutter);
 
-  &-fluid {
-    @include make-container();
-  }
-}
-
-// Row
-//
-// Rows contain and clear the floats of your columns.
-
-.row {
-	@include make-row();
-}
-
-// Remove the negative margin from default .row, then the horizontal padding
-// from all immediate children columns (to prevent runaway style inheritance).
-.no-gutters {
-	margin-right: 0;
-	margin-left: 0;
-	>.col,
-	>[class*="col-"] {
-		padding-right: 0;
-		padding-left: 0;
+	@for $i from 1 through $default-grid-columns {
+		> .grid__col-#{$i} {
+			@include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: $default-grid-gutter);
+		}
 	}
 }
 
-// Columns
-//
-// Common styles for small and large grid columns
-
-@include make-grid-columns();
-
-.col-rest {
-	overflow: hidden;
-}
+.align-self-start{ align-self: start; }

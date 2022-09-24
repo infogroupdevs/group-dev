@@ -1,4 +1,4 @@
-/*const main = function (JQ) {
+const main = function (JQ) {
 	let WIDTH_MOBILE = 320,
 		WIDTH_TABLET = 768,
 		WIDTH_DESKTOP = 1024,
@@ -13,14 +13,22 @@
 				window.addEventListener('resize', fn.resize);
 			},
 			documentReady: function () {
+				JQ(document).on('click', '#js-open-menu', fn.openMenuRight)
+				JQ(document).on('click', '#js-close-menu', fn.closeMenuRight)
 			},
 			resize: function () {
 			},
 			loadScroll: function () {
 			},
 			loadWindow: function () {
+			},
+			openMenuRight: function () {
+				JQ('#js-menu-right').addClass('r-0')
+			},
+			closeMenuRight: function () {
+				JQ('#js-menu-right').removeClass('r-0')
 			}
 		}
   fn.initialize()
   if (fn) return fn
-}(jQuery)*/
+}(jQuery)

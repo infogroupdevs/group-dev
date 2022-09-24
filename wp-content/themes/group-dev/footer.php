@@ -11,12 +11,19 @@
 
 ?>
 
-	<footer>
-		<h2>Footer</h2>
-	</footer>
-</div><!-- #page -->
+<footer class="footer bg-secondary">
+    <div class="d-flex pt-150 pb-100">
+        <div>
+            <h2>Let's collaborate</h2>
+            <div>
+            
+            </div>
+        </div>
+        <div></div>
+    </div>
+</footer>
+
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
