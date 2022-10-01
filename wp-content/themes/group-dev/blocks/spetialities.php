@@ -9,30 +9,30 @@ $specialities = get_field('specialities');
 ?>
 
 <section class="bg-gray py-120">
-    <div class="grid wrapper">
-        <div class="grid__col-6 position-relative align-self-start">
+    <div class="md:grid-1 wrapper">
+        <div class="position-relative align-self-start mb-108 lg:mb-0">
             <img src="<?= $image_1['sizes']['specialty-image-1'] ?>"
                  width="<?= $image_1['sizes']['specialty-image-1-width'] ?>"
                  height="<?= $image_1['sizes']['specialty-image-1-height'] ?>" alt="<?= $title ?>"
-                 />
+                 class="w-full h-auto sm:w-420 sm:h-420 mx-auto d-block wmax-100pto"/>
             <img src="<?= $image_2['sizes']['specialty-image-2'] ?>"
                  width="<?= $image_2['sizes']['specialty-image-2-width'] ?>"
                  height="<?= $image_2['sizes']['specialty-image-2-height'] ?>" alt="<?= $title ?>"
-                 class="position-absolute zi-1 r-0 b--80"
+                 class="position-absolute zi-1 r-0 b--80 w-80pto h-auto sm:w-357 sm:h-238"
             />
         </div>
-        <div class="grid__col-6 pl-72">
+        <div class="md:pl-72">
             <h6>SERVICIOS</h6>
             <h2 class="my-25"><?= $title ?></h2>
             <div class="d-block"><?= $description ?></div>
-            <div class="grid my-25">
+            <div class="md:grid-2 my-25">
                 <?php
                     $index = 1;
                     $length = count($specialities);
                 ?>
                 <?php foreach ($specialities as $value): ?>
                     <?php if ($index == 1): ?>
-                        <ul class="grid__col-6 check">
+                        <ul class="check">
                     <?php endif; ?>
                         <li class="py-5"><?= $value['specialty'] ?></li>
 	
