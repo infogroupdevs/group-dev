@@ -83,19 +83,24 @@ $theme: (
 	width: (
 		auto: auto,
 		full: 100%,
+		80pto: 80%,
 		screen: 100vh,
 		20: 20px,
 		30: 30px,
+		357: 357px,
 		400: 400px,
+		420: 420px,
 	),
 	height: (
 		auto: auto,
 		full: 100%,
 		screen: 100vh,
 		80: 80px,
+		238: 238px,
 	),
 	maxWidth: (
 		none: none,
+		100pto: 100%,
 	),
 	maxHeight: (
 		none: none,
@@ -112,6 +117,7 @@ $theme: (
 		5: 5px,
 		20: 20px,
 		25: 25px,
+		108: 108px,
 	),
 	padding: (
 		0: 0,
@@ -150,6 +156,10 @@ $theme: (
 		6: 6,
 		7: 7,
 		8: 8,
+	),
+	grid: (
+		1: repeat(auto-fit, minmax(448px, 1fr)),
+		2: repeat(auto-fit, minmax(200px, 1fr)),
 	),
 	displays: (
 		none: none,

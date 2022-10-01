@@ -23,7 +23,8 @@ Tags:
 @import "mixins/text-hide";
 @import "mixins/grid-framework-flex";
 @import "mixins/grid";
-@import "mixins/flexbox-grid-mixins";
+//- @import "mixins/flexbox-grid-mixins";
+@import "mixins/box-grid-mixins";
 
 //- Utilities
 @import "utilities/normalize";
@@ -61,4 +62,6 @@ Tags:
 .wrapper {
   max-width: $xl;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
