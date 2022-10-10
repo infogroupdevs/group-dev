@@ -1,0 +1,41 @@
+
+#countdown_dashboard {
+	height: 89px;
+}
+
+.dash {
+	width: 52px;
+	height: 44px;
+	background: transparent url('../images/dash.png') 0 0 no-repeat;
+	float: left;
+	position: relative;
+	background-size: 51px;
+}
+
+.dash .digit {
+	font-size: 39px;
+	font-weight: 700;
+	float: left;
+	width: 25px;
+	line-height: 35pt;
+	text-align: center;
+	font-family: Times;
+	color: #555;
+	position: relative;
+}
+
+.dash_title {
+	display: block;
+	font-size: 10px;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.dev_comment {
+	font-size: 14pt;
+	color: #777;
+	text-align: center;
+	font-style: italic;
+	margin: 40px 10px;
+}

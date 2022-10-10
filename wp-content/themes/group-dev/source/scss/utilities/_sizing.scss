@@ -1,0 +1,53 @@
+// stylelint-disable declaration-no-important
+
+// Width and height
+
+$grid-breakpoints: map-get($theme, 'screens');
+$widths: map-get($theme, 'width');
+$heights: map-get($theme, 'height');
+$maxWidths: map-get($theme, 'maxWidth');
+$maxHeights: map-get($theme, 'maxHeight');
+$minWidths: map-get($theme, 'minWidth');
+$minHeights: map-get($theme, 'minHeight');
+
+@each $bp in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($bp) {
+		$infix: breakpoint-infix($bp, $grid-breakpoints);
+
+		@each $attr, $value in $widths {
+			.#{$infix}w-#{$attr} {
+				width: $value !important;
+			}
+		}
+
+		@each $attr, $value in $heights {
+			.#{$infix}h-#{$attr} {
+				height: $value !important;
+			}
+		}
+
+		@each $attr, $value in $maxWidths {
+			.#{$infix}wmax-#{$attr} {
+				max-width: $value !important;
+			}
+		}
+
+		@each $attr, $value in $maxHeights {
+			.#{$infix}hmax-#{$attr} {
+				max-height: $value !important;
+			}
+		}
+
+		@each $attr, $value in $minWidths {
+			.#{$infix}wmin-#{$attr} {
+				min-width: $value !important;
+			}
+		}
+
+		@each $attr, $value in $minHeights {
+			.#{$infix}hmin-#{$attr} {
+				min-height: $value !important;
+			}
+		}
+	}
+}

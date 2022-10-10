@@ -1,0 +1,199 @@
+$btn-colors: map-get($theme, 'colors');
+$btn-color-default: map-get($btn-colors, 'default');
+
+$buttons: map-get($components, 'buttons');
+
+$links: map-get($components, 'link');
+$link-color: map-get($links, 'link-color');
+$hover-color: map-get($links, 'hover-color');
+$active-color: map-get($links, 'active-color');
+$visited-color: map-get($links, 'visited-color');
+$disabled-color: map-get($links, 'disabled-color');
+//-
+//- Buttons
+//-
+.btn,
+.btn-link {
+	cursor: default;
+  border: none;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: inherit;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all .5s ease;
+  &.btn--disabled,
+  &:disabled {
+    cursor: not-allowed;
+    & * {
+      pointer-events: none
+    }
+    &:hover,
+    &:hover {
+      box-shadow: none
+    }
+  }
+  &--sm {
+    font-size: 11px;
+  }
+
+  &--md {
+    font-size: 15px;
+  }
+
+  &--lg {
+    font-size: 18px;
+  }
+
+  &--xlg {
+    font-size: 22px;
+  }
+}
+
+.btn--disabled {
+	background-color: $btnPrimaryBackgroundDisabled  !important;
+	color: #fff !important;
+}
+
+.btn {
+  color: $btn-color-default;
+  i {
+    vertical-align: middle;
+  }
+
+  &.txt-hover span {
+    display: none;
+  }
+
+  &.txt-hover:hover span {
+    display: inline-block;
+  }
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.btn-link {
+  padding: 0;
+  color: $link-color;
+
+  i {
+    vertical-align: middle;
+  }
+
+  &:hover {
+    color: $hover-color !important;
+  }
+
+  &:active {
+    color: $active-color !important;
+  }
+
+  &.link--disabled,
+  &:disabled {
+    color: $disabled-color !important;
+  }
+}
+
+.btn-close {
+  padding: 5px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: .7;
+  color: #000;
+  border: none;
+  background: none;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+  outline: none;
+  &--right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+button {
+	border: none;
+}
+
+@each $attr, $value in $buttons {
+  $buttonAll: map-get($buttons, #{$attr});
+  $color: '';
+  .btn-#{$attr} {
+    @each $property, $valueProperty in $buttonAll {
+      @if $property == 'background-hover' {
+        &:hover {
+          background: #{$valueProperty} !important;
+        }
+      } @else if $property == 'background-disabled' {
+        &:disabled,
+        &[disabled] {
+          background: #{$valueProperty} !important;
+        }
+      } @else if $property == 'text-color-disabled' {
+        &:disabled,
+        &[disabled] {
+          color: #{$valueProperty} !important;
+        }
+      } @else if $property == 'border-color-disabled' {
+        &:disabled,
+        &[disabled] {
+          border-color: #{$valueProperty} !important;
+        }
+      } @else if $property == 'color-hover' {
+        &:hover {
+          color: #{$valueProperty} !important;
+        }
+      } @else {
+        #{$property} : #{$valueProperty};
+      }
+      @if $property == 'color' {
+        $color: #{$valueProperty};
+      }
+    }
+
+    &:visited {
+      color: #{$color};
+    }
+  }
+}
+
+@import "button-add-product";
+
+
+.btn-slider,
+.btn-slider-secondary {
+  &.disabled {
+    opacity: .26 !important;
+  }
+}
+
+.btn-green {
+  @extend .btn-secondary;
+  &.active, &:hover {
+    @extend .btn-primary;
+  }
+}
+
+.btn__sidebar__widget {
+  color: #fff;
+  font-size: 14px;
+  background-color: #F8F9F3;
+  color: #1A1818;
+  transition: all .5s;
+  &.active, &:hover {
+    background-color: #1A1818;
+    color: #fff;
+  }
+
+}

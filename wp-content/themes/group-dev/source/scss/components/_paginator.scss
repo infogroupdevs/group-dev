@@ -1,0 +1,53 @@
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background: $primaryColor;
+	color: white;
+	font-size: 14px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+	padding: 10px;
+	height: 33px;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+	border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+	border: none;
+	margin: 5px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a.page-numbers {
+	background: $grayColor;
+	color: #777777;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a.next {
+	font-size: 0;
+	position: relative;
+	background: transparent;
+	&:before {
+		position: absolute;
+		@extend .icon-arrow-right;
+		@extend [class*=" icon-"];
+		color: $primaryColor;
+		font-size: 14px;
+	}
+}
+
+.woocommerce nav.woocommerce-pagination ul li a.prev {
+	font-size: 0;
+	position: relative;
+	background: transparent;
+	&:before {
+		position: absolute;
+		@extend .icon-arrow-left;
+		@extend [class*=" icon-"];
+		color: $primaryColor;
+		font-size: 14px;
+	}
+}

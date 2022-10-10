@@ -1,0 +1,66 @@
+
+.alignright, a .alignright {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.alignleft, a .alignleft {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.aligncenter, a .aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+}
+
+.content p, .user--inactive p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $lg) {
+  .content p, .user--inactive p {
+    margin-bottom: 24px;
+  }
+  .content h2, .content h3, .content h4, .content h5, .content h6, .user--inactive h2, .user--inactive h3, .user--inactive h4, .user--inactive h5, .user--inactive h6 {
+    margin-bottom: 20px;
+  }
+}
+
+.bloque {
+  background: $primaryColor;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  @media (min-width: $lg) {
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 15px;
+    &.bloque--left {
+      float: left;
+      margin-right: 15px;
+    }
+    &.bloque--right {
+      float: right;
+      margin-left: 15px;
+    }
+  }
+  p, a, h1, h2, h3, h4, h5, h6, li {
+    color: white;
+  }
+  .page-format-video & {
+    background: red;
+  }
+  .page-format-quote & {
+    background: red;
+  }
+  .page-format-evento & {
+    background: red;
+  }
+}

@@ -1,0 +1,17 @@
+.footer_photo_instagram {
+  .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    li.GraphImage {
+      > div {
+        height: 79px;
+        width: 79px;
+        margin: 5px;
+      }
+      img {
+        width: 79px;
+        margin: 5px;
+      }
+    }
+  }
+}

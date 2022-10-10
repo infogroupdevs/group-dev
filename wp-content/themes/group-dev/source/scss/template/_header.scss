@@ -1,0 +1,9 @@
+.menu {
+  &-right {
+    right: -100%;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .7s cubic-bezier(.9,.03,0,.96) .4s;
+    transition: all .7s cubic-bezier(.9,.03,0,.96) .4s;
+  }
+}

@@ -1,0 +1,45 @@
+.ico-chile,
+.ico-peru,
+.ico-colombia,
+.ico-internacional,
+.ico-english {
+  &:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+.ico-chile {
+  &:before {
+    background: url(../images/svg/ico-chile.svg) no-repeat;
+  }
+}
+
+.ico-peru {
+  &:before {
+    background: url(../images/svg/ico-peru.svg) no-repeat;
+  }
+}
+
+.ico-colombia {
+  &:before {
+    background: url(../images/svg/ico-colombia.svg) no-repeat;
+  }
+}
+
+.ico-internacional {
+  &:before {
+    background: url(../images/svg/ico-internacional.svg) no-repeat;
+  }
+}
+
+.ico-english {
+  &:before {
+    background: url(../images/svg/ico-english.svg) no-repeat center center;
+    background-size: 14px;
+  }
+}

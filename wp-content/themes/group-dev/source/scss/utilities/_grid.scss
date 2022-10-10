@@ -1,0 +1,14 @@
+$grid-breakpoints: map-get($theme, 'screens');
+$grid: map-get($theme, 'grid');
+
+@each $bp in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($bp) {
+		$infix: breakpoint-infix($bp, $grid-breakpoints);
+		@each $attr, $value in $grid {
+			.#{$infix}grid-#{$attr} {
+				@include display-grid;
+				@include grid-template-columns(#{$value});
+			}
+		}
+	}
+}
