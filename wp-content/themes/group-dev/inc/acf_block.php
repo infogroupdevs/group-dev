@@ -31,6 +31,19 @@ function register_acf_block_types()
 			]
 		);
 		
+		acf_register_block_type(
+			[
+				'name' => 'categories',
+				'title' => __('Categories'),
+				'description' => __('Block Categories.'),
+				'category' => 'formatting',
+				'icon' => 'images-alt2',
+				'keywords' => ['block', 'custom', 'experiences', 'categories'],
+				'render_template' => '/blocks/categories.php',
+				'mode' => 'edit',
+			]
+		);
+		
 	}
 }
 
