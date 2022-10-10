@@ -102,9 +102,11 @@ $box-shadow: map-get($animation, "shadow");
 .link_img__size__hover {
   overflow: hidden;
   display: inline-block;
+
   img {
     transition: all .3s;
   }
+
   &:hover {
     img:not(.play) {
       transition: all 500ms;
@@ -137,69 +139,83 @@ $box-shadow: map-get($animation, "shadow");
 
 
 .animation-translateX {
-	transform: translateX(0);
-	transition: transform .3s ease;
+  transform: translateX(0);
+  transition: transform .3s ease;
 }
 
 .menuSide {
-	transform: translateX(-10);
-	transition: all .2s ease;
-	animation: translateXOpacity .2s linear;
-	@include media-breakpoint-up(lg) {
-		visibility: hidden;
-		margin-left: -30px;
-		opacity: 0;
-		display: none;
-	}
-	&.scroll-auto-horizontal {
-		display: inline-block;
-		visibility: visible;
-		opacity: 1;
-		width: auto;
-		vertical-align: middle;
-		margin-left: 0;
-		position: relative;
-		transition: all 1s ease 0s;
-	}
+  transform: translateX(-10);
+  transition: all .2s ease;
+  animation: translateXOpacity .2s linear;
+  @include media-breakpoint-up(lg) {
+    visibility: hidden;
+    margin-left: -30px;
+    opacity: 0;
+    display: none;
+  }
+
+  &.scroll-auto-horizontal {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 0;
+    position: relative;
+    transition: all 1s ease 0s;
+  }
 }
+
 .animation-translateX.active {
-	transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 @keyframes translateXOpacity {
-	0% {
-		transform: translateX(0px);
-		opacity: 0
-	}
+  0% {
+    transform: translateX(0px);
+    opacity: 0
+  }
 
-	1% {
-		opacity: .1
-	}
+  1% {
+    opacity: .1
+  }
 
-	25% {
-		opacity: .3
-	}
+  25% {
+    opacity: .3
+  }
 
-	50% {
-		opacity: .5
-	}
+  50% {
+    opacity: .5
+  }
 
-	100% {
-		display: inline-block;
-		opacity: 1
-	}
+  100% {
+    display: inline-block;
+    opacity: 1
+  }
 }
 
 .play-animation:hover {
-	transition: all .1s ease;
-	.bg {
-		opacity: .1 !important;
-	}
-	.play {
-		transition: all .1s ease;
-		opacity: 1 !important;
-		width: 55px !important;
-		font-size: 55px!important;
-	}
+  transition: all .1s ease;
+
+  .bg {
+    opacity: .1 !important;
+  }
+
+  .play {
+    transition: all .1s ease;
+    opacity: 1 !important;
+    width: 55px !important;
+    font-size: 55px !important;
+  }
 }
 
+.transform-category-animation {
+  .description {
+    transition: transform .4s cubic-bezier(.22,.61,.36,1);
+    transform: translateY(95px) translateZ(0px);
+  }
+
+  &:hover .description {
+    transform: translateY(10px) translateZ(0px);
+  }
+}
