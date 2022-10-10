@@ -7,7 +7,6 @@ $image_2 = get_field('image_specialities_2');
 $image_2 = get_field('image_specialities_2');
 $specialities = get_field('specialities');
 ?>
-
 <section class="bg-gray py-120">
     <div class="md:grid-1 wrapper">
         <div class="position-relative align-self-start mb-108 lg:mb-0">
