@@ -20,13 +20,13 @@ function register_acf_block_types()
 		
 		acf_register_block_type(
 			[
-				'name' => 'spatialities',
+				'name' => 'specialties',
 				'title' => __('Spatialities'),
 				'description' => __('Block Spatialities.'),
 				'category' => 'formatting',
 				'icon' => 'images-alt2',
-				'keywords' => ['block', 'custom', 'spatialities', 'quote', 'especialidad', 'especialidades'],
-				'render_template' => '/blocks/spatialities.php',
+				'keywords' => ['block', 'custom', 'specialties', 'quote', 'especialidad', 'especialidades'],
+				'render_template' => '/blocks/specialties.php',
 				'mode' => 'edit',
 			]
 		);

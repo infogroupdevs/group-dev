@@ -1,14 +1,14 @@
-$default-grid-columns: 12;
-$default-grid-gutter: 2%;
+$grid-breakpoints: map-get($theme, 'screens');
+$grid: map-get($theme, 'grid');
 
-.grid {
-	@include grid($gutter: $default-grid-gutter);
-
-	@for $i from 1 through $default-grid-columns {
-		> .grid__col-#{$i} {
-			@include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: $default-grid-gutter);
+@each $bp in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($bp) {
+		$infix: breakpoint-infix($bp, $grid-breakpoints);
+		@each $attr, $value in $grid {
+			.#{$infix}grid-#{$attr} {
+				@include display-grid;
+				@include grid-template-columns(#{$value});
+			}
 		}
 	}
 }
-
-.align-self-start{ align-self: start; }
