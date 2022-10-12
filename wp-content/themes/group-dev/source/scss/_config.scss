@@ -9,6 +9,7 @@ $colorOff: #CFD3E4;
 $colorDanger: $redColor;
 $success: $primaryColor;
 
+$grayColor400: #DDDDDD;
 $grayColor500: #EAE9E9;
 $grayColor600: #333;
 
@@ -53,6 +54,7 @@ $theme: (
 		success: $success,
 		desactive-link: #A7A7A7,
 		semi-transparent: #FFFFFFD1,
+		gray-400: $grayColor400,
 		gray-500: $grayColor500,
 		gray-600: $grayColor600,
 	),
@@ -64,7 +66,9 @@ $theme: (
 		14: 14px,
 		15: 15px,
 		16: 16px,
+		20: 20px,
 		40: 40px,
+		42: 42px,
 	),
 	fontWeight: (
 		bold: $bold,
@@ -102,6 +106,7 @@ $theme: (
 		none: none,
 		100pto: 100%,
 		180: 180px,
+		394: 394px,
 		770: 770px,
 	),
 	maxHeight: (
@@ -118,7 +123,9 @@ $theme: (
 		0: 0,
 		5: 5px,
 		20: 20px,
+		22: 22px,
 		25: 25px,
+		30: 30px,
 		50: 50px,
 		108: 108px,
 	),
