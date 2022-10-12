@@ -2,9 +2,6 @@
 $title = get_field('title_general_categories');
 $description = get_field('description_general_categories');
 $categories = get_field('ours_categories');
-//echo '<pre>';
-//print_r($categories);
-//echo '</pre>';
 ?>
 <section class="bg-gray py-60">
     <div class="wrapper pb-20">

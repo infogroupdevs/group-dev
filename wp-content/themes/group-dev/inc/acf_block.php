@@ -44,6 +44,19 @@ function register_acf_block_types()
 			]
 		);
 		
+		acf_register_block_type(
+			[
+				'name' => 'items_images',
+				'title' => __('Items images'),
+				'description' => __('Items images.'),
+				'category' => 'formatting',
+				'icon' => 'images-alt2',
+				'keywords' => ['block', 'custom', 'images', 'items'],
+				'render_template' => '/blocks/items_images.php',
+				'mode' => 'edit',
+			]
+		);
+		
 	}
 }
 
