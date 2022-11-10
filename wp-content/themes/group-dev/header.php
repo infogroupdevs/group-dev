@@ -24,17 +24,19 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="header p-20 bg-semi-transparent">
+<header class="header position-fixed t-0 w-full p-20 bg-semi-transparent  zi-2">
+   <div class="wrapper">
     <div class="d-flex justify-content-between">
-        <div class="">
-            <?php the_custom_logo();?>
+            <div class="">
+                <?php the_custom_logo();?>
+            </div>
+            <?php require_once(PATH_INC . '/menu/main-menu.php'); ?>
+            <button type="button" id="js-open-menu" class="w-20 p-0 bg-transparent">
+                <img class="w-full" src="<?php echo UPLOAD_DIR ?>/icon-menu.png" alt="">
+            </button>
         </div>
-        <?php require_once(PATH_INC . '/menu/main-menu.php'); ?>
-        <button type="button" id="js-open-menu" class="w-20 p-0 bg-transparent">
-            <img class="w-full" src="<?php echo UPLOAD_DIR ?>/icon-menu.png" alt="">
-        </button>
+        <section id="js-menu-right" class="menu-right position-fixed t-0 w-400 h-screen pt-100 pr-20 pb-20 pl-50 bg-gray-500 overflow-auto-y">
+            <?php require_once(PATH_INC . '/menu/main-menu-right.php'); ?>
+        </section>
     </div>
-    <section id="js-menu-right" class="menu-right position-fixed t-0 w-400 h-screen pt-100 pr-20 pb-20 pl-50 bg-gray-500 overflow-auto-y">
-			<?php require_once(PATH_INC . '/menu/main-menu-right.php'); ?>
-    </section>
 </header>
