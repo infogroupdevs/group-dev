@@ -197,3 +197,16 @@ button {
   }
 
 }
+
+.button {
+  display: inline-block;
+  padding: 20px 40px 20px 40px;
+  line-height: normal;
+
+  &--primary {
+    color: $white;
+    background-color: $btn-color-default;
+    text-transform: capitalize;
+  }
+}
+

@@ -57,7 +57,10 @@ Tags:
 @import "components/forms";
 @import "components/radio";
 
+@import "template/global";
 @import "template/header";
+
+@import "./blocks/hero";
 
 .wrapper {
   max-width: $xl;
