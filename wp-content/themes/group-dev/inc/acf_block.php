@@ -8,7 +8,7 @@ function register_acf_block_types()
 		acf_register_block_type(
 			[
 				'name' => 'hero',
-				'title' => __('Hero'),
+				'title' => __('Block Hero'),
 				'description' => __('Block Hero.'),
 				'category' => 'formatting',
 				'icon' => 'images-alt2',

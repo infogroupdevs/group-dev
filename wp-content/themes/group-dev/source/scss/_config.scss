@@ -10,6 +10,7 @@ $colorDanger: $redColor;
 $success: $primaryColor;
 
 $grayColor400: #DDDDDD;
+$grayColor100: #00000008;
 $grayColor500: #EAE9E9;
 $grayColor600: #333;
 
@@ -55,6 +56,7 @@ $theme: (
 		desactive-link: #A7A7A7,
 		semi-transparent: #FFFFFFD1,
 		gray-400: $grayColor400,
+		gray-100: $grayColor100,
 		gray-500: $grayColor500,
 		gray-600: $grayColor600,
 	),
@@ -201,7 +203,8 @@ $theme: (
 	),
 	top: (
 		0: 0,
-		20: 20px
+		20: 20px,
+		-100: -100px,
 	),
 	bottom: (
 		-80:-80px,

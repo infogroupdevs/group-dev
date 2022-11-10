@@ -1,1 +1,61 @@
+main {
+  position: relative;
+}
 
+.line {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid $grayColor100;
+
+  &--left {
+    left: calc(50% - 570px);
+  }
+
+  &--center {
+    left: 50%;
+  }
+
+  &--right {
+    right: calc(50% - 570px);
+  }
+}
+
+.social-page {
+  position: fixed;
+  top: calc(50% - 30px);
+  left: 50px;
+
+  li {
+    padding: 5px 0;
+  }
+}
+
+.icon {
+  font-size: 30px;
+  color: $primaryColor;
+}
+
+.telegram {
+  position: fixed;
+  top: calc(50% + 39px);
+  right: 0;
+  color: $primaryColor;
+  transform: rotateZ(270deg);
+  transform-origin: top;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  line-height: normal;
+  background-color: $grayColor;
+  text-transform: uppercase;
+}
