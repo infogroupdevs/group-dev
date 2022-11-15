@@ -63,6 +63,7 @@ $theme: (
 	fontSizes: (
 		default: 14px,
 		0: 0,
+		10: 10px,
 		12: 12px,
 		13: 13px,
 		14: 14px,
@@ -124,16 +125,19 @@ $theme: (
 		auto: auto,
 		0: 0,
 		5: 5px,
+		10: 10px,
 		20: 20px,
 		22: 22px,
 		25: 25px,
 		30: 30px,
 		50: 50px,
+		100: 100px,
 		108: 108px,
 	),
 	padding: (
 		0: 0,
-		5:5px,
+		10: 10px,
+		5: 5px,
 		20: 20px,
 		30: 30px,
 		50: 50px,
@@ -149,6 +153,7 @@ $theme: (
 		0: 0,
 		1: 1,
 		2: 2,
+		3: 3,
 	),
 	maxLines: (
 		h1-2l: (
@@ -172,6 +177,7 @@ $theme: (
 	grid: (
 		1: repeat(auto-fit, minmax(448px, 1fr)),
 		2: repeat(auto-fit, minmax(200px, 1fr)),
+		50: repeat(2, 1fr),
 	),
 	displays: (
 		none: none,

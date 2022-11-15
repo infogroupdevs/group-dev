@@ -2,7 +2,7 @@
 <span class="line line--center"></span>
 <span class="line line--right"></span>
 
-<ul class="social-page zi-2">
+<ul class="social-page zi-2 d-none lg:d-block">
   <li>
     <a href="" class="d-block">
       <i class="icon icon-facebook"></i>
@@ -20,7 +20,7 @@
   </li>
 </ul>
 
-<a href="mailto:hello@roll.er" class="telegram d-inline-block zi-2">
+<a href="mailto:hello@roll.er" class="telegram d-none lg:d-inline-block zi-2">
   <i class="icon icon-telegram-app"></i>
   <span class="email">
     hello@roll.er
