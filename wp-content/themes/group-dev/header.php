@@ -24,7 +24,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="header position-fixed t-0 w-full p-20 bg-semi-transparent  zi-2">
+<header class="header position-fixed t-0 w-full p-10 lg:p-20 bg-semi-transparent zi-3">
    <div class="wrapper">
     <div class="d-flex justify-content-between">
             <div class="">
@@ -35,7 +35,7 @@
                 <img class="w-full" src="<?php echo UPLOAD_DIR ?>/icon-menu.png" alt="">
             </button>
         </div>
-        <section id="js-menu-right" class="menu-right position-fixed t-0 w-400 h-screen pt-100 pr-20 pb-20 pl-50 bg-gray-500 overflow-auto-y">
+        <section id="js-menu-right" class="menu-right position-fixed t-0 w-full lg:w-400 h-screen pt-20 pr-20 pb-20 pl-50 bg-gray-500 overflow-auto-y">
             <?php require_once(PATH_INC . '/menu/main-menu-right.php'); ?>
         </section>
     </div>

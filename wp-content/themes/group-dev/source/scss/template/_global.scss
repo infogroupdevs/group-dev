@@ -1,5 +1,6 @@
 main {
   position: relative;
+  overflow: hidden;
 }
 
 .line {
@@ -58,4 +59,12 @@ main {
   line-height: normal;
   background-color: $grayColor;
   text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
 }
