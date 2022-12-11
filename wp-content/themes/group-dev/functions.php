@@ -1,9 +1,13 @@
 <?php
 require_once(get_template_directory() . '/inc/var_global.php');
 
+
 require_once(PATH_INC . '/enqueue_style.php');
 require_once(PATH_INC . '/enqueue_script.php');
 require_once(PATH_INC . '/acf_block.php');
+require_once(PATH_INC . '/custom-post_type.php');
+
+
 
 /**
  * Group Dev functions and definitions
@@ -207,5 +211,4 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 }
-
 

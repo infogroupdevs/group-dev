@@ -79,28 +79,28 @@ $border-radius: map-get($theme, 'borderRadius');
 
 
 @each $bp in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($bp) {
-    $infix: breakpoint-infix($bp, $grid-breakpoints);
+	@include media-breakpoint-up($bp) {
+		$infix: breakpoint-infix($bp, $grid-breakpoints);
 
 		@each $attr, $value in $borders {
-			.#{$infix}bd-#{$attr} { border-width: $value !important; }
+			.#{$infix}bd-#{"" + $attr} { border-width: $value !important; }
 		}
 
 		@each $attr, $value in $colors {
-			.#{$infix}bd-#{$attr} { border-color: $value !important; }
+			.#{$infix}bd-#{"" + $attr} { border-color: $value !important; }
 		}
 		@each $attr, $value in $borderStyles {
-			.#{$infix}bd-#{$attr} { border-style: $value !important; }
+			.#{$infix}bd-#{"" + $attr} { border-style: $value !important; }
 		}
 	}
 }
 
 @each $bp in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($bp) {
-    $infix: breakpoint-infix($bp, $grid-breakpoints);
+	@include media-breakpoint-up($bp) {
+		$infix: breakpoint-infix($bp, $grid-breakpoints);
 		@each $attr, $value in $borderStyles {
-			.#{$infix}bd-#{$attr} { 
-				border-style: $value !important; 
+			.#{$infix}bd-#{$attr} {
+				border-style: $value !important;
 				&-left {
 					border-left-style: $value !important;
 				}

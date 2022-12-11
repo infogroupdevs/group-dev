@@ -51,11 +51,13 @@ Tags:
 @import "utilities/grid";
 @import "utilities/check_list_ul";
 
+
 //- Components
 @import "components/buttons";
 @import "components/checkbox";
 @import "components/forms";
 @import "components/radio";
+@import "components/loading";
 
 @import "template/global";
 @import "template/header";

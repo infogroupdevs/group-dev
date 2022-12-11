@@ -10,7 +10,7 @@ $colorDanger: $redColor;
 $success: $primaryColor;
 
 $grayColor400: #DDDDDD;
-$grayColor100: #00000008;
+$grayColor100: #343D48;
 $grayColor500: #EAE9E9;
 $grayColor600: #333;
 
@@ -131,6 +131,7 @@ $theme: (
 		25: 25px,
 		30: 30px,
 		50: 50px,
+		62: 62px,
 		100: 100px,
 		108: 108px,
 	),
@@ -237,6 +238,7 @@ $theme: (
 	),
 	borderRadius: (
 		0: 0,
+		2: 2px
 	),
 	borderStyles: (
 		solid : solid,
@@ -249,7 +251,7 @@ $theme: (
 			line-height: 38px,
 		),
 		h2: (
-			font-size: 40px,
+			font-size: 30px,
 			font-weight: $bold,
 			line-height: 40px,
 			color: $secondaryColor,
@@ -331,19 +333,20 @@ $components: (
 	),
 	form: (
 		label: (
-			color: $grayColor,
+			color: $grayColor100,
 			color-danger: $colorDanger,
 		),
 		input: (
-			color: $grayColor,
+			color: $grayColor100,
 			color-danger: $colorDanger,
-			border-color: $grayColor,
+			border-color: $grayColor100,
 			border-color-danger: $colorDanger,
 			input-background: $white,
 			placeholder-color: $grayColor,
 			input-radius: 4px,
 			height: 34px,
-			border: none,
+			border: 1px solid,
+			width: 100%,
 		),
 		radio: (
 			background: lighten(#D71F26, 20%)

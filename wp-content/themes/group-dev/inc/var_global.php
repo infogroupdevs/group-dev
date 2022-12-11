@@ -7,3 +7,4 @@ if (!defined('PATH_INC')) {
 if (!defined('UPLOAD_DIR')) {
 	define("UPLOAD_DIR", wp_upload_dir()['baseurl']);
 }
+

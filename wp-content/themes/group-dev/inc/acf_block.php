@@ -57,6 +57,19 @@ function register_acf_block_types()
 			]
 		);
 		
+		acf_register_block_type(
+			[
+				'name' => 'contact_form',
+				'title' => __('Contact form'),
+				'description' => __('Contact form.'),
+				'category' => 'formatting',
+				'icon' => 'images-alt2',
+				'keywords' => ['contact', 'form'],
+				'render_template' => '/blocks/contact_form.php',
+				'mode' => 'edit',
+			]
+		);
+		
 	}
 }
 
