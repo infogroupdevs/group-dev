@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_631fb48b5116b",
-            "label": "HEADER",
+            "label": "BUSINESS",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -84,8 +84,8 @@
         },
         {
             "key": "field_631fb6535e77a",
-            "label": "Info",
-            "name": "info",
+            "label": "Business Info Top",
+            "name": "business_info_top",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -100,6 +100,44 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_63b6e31677b1a",
+            "label": "Business Info Bottom",
+            "name": "business_info_bottom",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_63b6e414e55dc",
+            "label": "Business emails",
+            "name": "business_emails",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -120,5 +158,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1663022769
+    "modified": 1672930336
 }

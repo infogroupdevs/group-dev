@@ -13,6 +13,10 @@ if (!defined('ABSPATH')) {
 }
 
 
+if (!function_exists('is_plugin_active')) {
+	include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+}
+
 function contact_form_custom_activation()
 {
 	global $wpdb;
